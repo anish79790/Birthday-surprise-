@@ -1,0 +1,8 @@
+{
+  "name": "SURPRISE.EXE - Niharika's Birthday",
+  "description": "A retro pastel pink kawaii interactive birthday website for Niharika with cute penguin, memories, romantic question, letter, and confetti surprise.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

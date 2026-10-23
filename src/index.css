@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 4px 4px 0px #380026;
+  }
+  50% {
+    box-shadow: 5px 5px 0px #380026, 0 0 16px rgba(244, 114, 182, 0.45);
+  }
+}
+
+@keyframes flameWiggle {
+  0%, 100% {
+    transform: scale(1) rotate(-2deg);
+  }
+  50% {
+    transform: scale(1.15) rotate(3deg);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-flame {
+  animation: flameWiggle 0.6s ease-in-out infinite alternate;
+}
+
+/* Custom retro pixel scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffe4ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 3px;
+  border: 1px solid #380026;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb7185;
+}
+
+/* Cute checkered desktop wallpaper background */
+.retro-desktop-bg {
+  background-color: #ffdce6;
+  background-image: 
+    radial-gradient(#f472b6 0.75px, transparent 0.75px),
+    radial-gradient(#f472b6 0.75px, #ffdce6 0.75px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
